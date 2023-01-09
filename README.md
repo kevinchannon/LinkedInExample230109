@@ -1,0 +1,3 @@
+This is a simple program that calculates Fibbonacci numbers in two different ways. The loop version in invariably MUCH faster and remains much faster as the number increases.  Interestingly, MSVC++ produces significantly slower code for the recursive version than GCC (both on Windows). The scaling behaviour of the MSVC++ version is very bad, for some reason.
+
+This is not a rigorous or scientific study, but it's interesting, none-the-less.
