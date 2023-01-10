@@ -5,14 +5,14 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 uint64_t fib_recurse(uint8_t x) noexcept {
-        return x < 2 ? 1 : fib_recurse(x - 1) + fib_recurse(x - 2);
+        return x < 2 ? x : fib_recurse(x - 1) + fib_recurse(x - 2);
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 
 uint64_t fib_loop(uint8_t x) noexcept {
     auto out = uint64_t{1};
-    auto prev = uint64_t{1};
+    auto prev = uint64_t{0};
 
     for (auto i = uint8_t{2}; i <= x; ++i){
         auto tmp = out;
